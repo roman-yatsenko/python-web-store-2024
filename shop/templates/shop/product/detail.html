@@ -1,5 +1,6 @@
 {% extends 'shop/base.html' %}
 {% load static %}
+{% load tags %}
 
 {% block title %}
   {{ product.name }}
@@ -22,6 +23,6 @@
         <span class="border border-warning border-2 rounded p-2">{{ product.price }} ₴</span>
       </p>
     </div>
-    <div class="col-6">{{ product.description|linebreaks }}</div>
+    <div class="col-6">{{ product.description|markdown }}</div>
   </div>
 {% endblock %}
