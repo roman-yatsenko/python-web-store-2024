@@ -22,6 +22,11 @@
       <p class="h5 text-center">
         <span class="border border-warning border-2 rounded p-2">{{ product.price }} ₴</span>
       </p>
+      <form action="{% url 'cart:cart_add' product.id%}" method="post">
+        {% csrf_token %}
+        {{ cart_product_form }}
+        <input type="submit" value="Купити">
+      </form>
     </div>
     <div class="col-6">{{ product.description|markdown }}</div>
   </div>
