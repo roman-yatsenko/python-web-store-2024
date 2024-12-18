@@ -31,7 +31,7 @@
               <form action="{% url 'logout' %}" method="post">
                 {% if request.user.is_authenticated %}
                   {% csrf_token %}
-                  <a href="{% url 'password_change' %}" class="btn btn-warning">
+                  <a href="{% url 'edit' %}" class="btn btn-warning">
                     {{ request.user.first_name|default:request.user.username }}
                   </a>
                   <input type="submit" class="btn btn-outline-light me-2" value="Вихід">
