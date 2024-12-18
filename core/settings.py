@@ -140,5 +140,5 @@ MEDIA_ROOT = BASE_DIR / 'media'
 CART_SESSION_ID = 'cart'
 
 LOGIN_REDIRECT_URL = 'shop:product_list'
-LOGIN_URL = 'account:login'
-LOGOUT_URL = 'account:logout'
+LOGIN_URL = 'login'
+LOGOUT_URL = 'logout'
