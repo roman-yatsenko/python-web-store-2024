@@ -18,6 +18,10 @@
       <input type="hidden" name="next" value="{{ next }}">
       <input type="submit" value="Вхід" class="btn btn-warning">
     </form>
+    <p class="mt-2">
+      Якщо Ви ще не зареєстровані на сайті, то перейдіть за 
+      <a href="{% url 'register' %}">посиланням</a>.
+    </p>
   </div>
 </div>
 {% endblock content %}
