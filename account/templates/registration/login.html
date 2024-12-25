@@ -19,8 +19,8 @@
       <input type="submit" value="Вхід" class="btn btn-warning">
     </form>
     <p class="mt-2">
-      Якщо Ви ще не зареєстровані на сайті, то перейдіть за 
-      <a href="{% url 'register' %}">посиланням</a>.
+      <a href="{% url 'register' %}" class="text-decoration-none">Реєстрація</a> 
+      <a href="{% url 'password_reset' %}" class="ms-2 text-decoration-none">Забули пароль?</a>
     </p>
   </div>
 </div>
