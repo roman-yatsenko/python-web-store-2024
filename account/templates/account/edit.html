@@ -6,7 +6,10 @@
 {% block content %}
 <div class="row">
   <div class="col-6">
-    <h2>Змінити профіль користувача</h2>
+    <div class="d-flex align-items-center">
+      <h2>Змінити профіль користувача</h2>
+      <div class="w-25 m-2"><img src="{{ user.profile.photo.url }}" class="w-100"></div>
+    </div>
     <form method="post" enctype="multipart/form-data">
       {% csrf_token %}
       {{ user_form|crispy }}
