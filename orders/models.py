@@ -22,6 +22,7 @@ class Order(models.Model):
             models.Index(fields=['-created']),
         ]
         verbose_name = "Замовлення"
+        verbose_name_plural = "Замовлення"
     
     def __str__(self):
         return f"Замовлення №{self.id}"
