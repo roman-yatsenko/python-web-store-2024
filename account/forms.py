@@ -1,17 +1,18 @@
 from django import forms
 from django.contrib.auth.models import User
+from django.utils.translation import gettext as _
 
 from .models import Profile
 
 
 class LoginForm(forms.Form):
-    username = forms.CharField(label='Логін')
-    password = forms.CharField(label='Пароль', widget=forms.PasswordInput)
+    username = forms.CharField(label=_('Логін'))
+    password = forms.CharField(label=_('Пароль'), widget=forms.PasswordInput)
 
 
 class UserRegistrationForm(forms.ModelForm):
-    password = forms.CharField(label='Пароль', widget=forms.PasswordInput)
-    password2 = forms.CharField(label='Повторити пароль', widget=forms.PasswordInput)
+    password = forms.CharField(label=_('Пароль'), widget=forms.PasswordInput)
+    password2 = forms.CharField(label=_('Повторити пароль'), widget=forms.PasswordInput)
 
     class Meta:
         model = User
@@ -20,7 +21,7 @@ class UserRegistrationForm(forms.ModelForm):
     def clean_password2(self):
         cd = self.cleaned_data
         if cd['password'] != cd['password2']:
-            raise forms.ValidationError('Паролі не співпадають.')
+            raise forms.ValidationError(_('Паролі не співпадають.'))
         return cd['password2']
 
 
