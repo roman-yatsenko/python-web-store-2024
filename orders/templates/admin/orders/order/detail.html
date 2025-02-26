@@ -1,20 +1,25 @@
 {% extends "admin/base_site.html" %}
+{% load i18n %}
 
 {% block title %}
+  {% blocktrans %}
   Замовлення №{{ order.id }} - {{ block.super }}
+  {% endblocktrans %}
 {% endblock title %}
 
 {% block breadcrumbs %}
   <div class="breadcrumbs">
-    <a href="{% url 'admin:index' %}">Домівка</a>
-    <a href="{% url 'admin:orders_order_changelist' %}">Замовлення</a>
+    <a href="{% url 'admin:index' %}">{% trans "Домівка" %}</a>
+    <a href="{% url 'admin:orders_order_changelist' %}">{% trans "Замовлення" %}</a>
     <a href="{% url 'admin:orders_order_change' order.id %}">№{{ order.id }}</a>
   </div>
 {% endblock breadcrumbs %}
 
 {% block content %}
   <div class="module">
+    {% blocktrans %}
     <h1>Замовлення №{{ order.id }}</h1>
+    {% endblocktrans %}
     <ul class="object-tools">
       <li>
         <a href="#" onclick="window.print()"></a>
@@ -22,11 +27,11 @@
     </ul>
     <table>
       <tr>
-        <th>Створено</th>
+        <th>{% trans "Створено" %}</th>
         <td>{{ order.created }}</td>
       </tr>
       <tr>
-        <th>Покупець</th>
+        <th>{% trans "Покупець" %}</th>
         <td>{{ order.first_name }} {{ order.last_name }}</td>
       </tr>
       <tr>
@@ -34,29 +39,29 @@
         <td><a href="mailto:{{ order.email }}">{{ order.email }}</a></td>
       </tr>
       <tr>
-        <th>Адреса</th>
+        <th>{% trans "Адреса" %}</th>
         <td>{{ order.city}} {{order.address }}</td>
       </tr>
       <tr>
-        <th>Сума</th>
+        <th>{% trans "Сума" %}</th>
         <td>{{ order.get_total_cost }}</td>
       </tr>
       <tr>
-        <th>Статус</th>
-        <td>{% if order.paid %}Оплачено{% else %}Очікується оплата{% endif %}</td>
+        <th>{% trans "Статус" %}</th>
+        <td>{% if order.paid %}{% trans "Оплачено" %}{% else %}{% trans "Очікується оплата" %}{% endif %}</td>
       </tr>
     </table>
   </div>
 
   <div class="module">
-    <h2>Товари</h2>
+    <h2>{% trans "Товари" %}</h2>
     <table style="width: 100%;">
       <thead>
         <tr>
-          <th>Товар</th>
-          <th>Ціна</th>
-          <th>Кількість</th>
-          <th>Сума</th>
+          <th>{% trans "Товар" %}</th>
+          <th>{% trans "Ціна" %}</th>
+          <th>{% trans "Кількість" %}</th>
+          <th>{% trans "Сума" %}</th>
         </tr>
       </thead>
       <tbody>
@@ -69,7 +74,7 @@
           </tr>
         {% endfor %}
         <tr>
-          <td colspan="3"><b>Загальна сума:</b></td>
+          <td colspan="3"><b>{% trans "Загальна сума:" %}</b></td>
           <td><b>{{ order.get_total_cost }}</b></td>
         </tr>
       </tbody>
