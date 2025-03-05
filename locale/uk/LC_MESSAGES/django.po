@@ -8,18 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-26 19:25+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2025-03-05 18:30+0200\n"
+"PO-Revision-Date: 2025-03-05 18:33+0200\n"
+"Last-Translator:   <admin@mail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != "
-"11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % "
-"100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || "
-"(n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+"X-Translated-Using: django-rosetta 0.10.1\n"
 
 #: .\account\forms.py:9
 msgid "Логін"
@@ -55,6 +53,10 @@ msgstr ""
 
 #: .\account\models.py:15
 msgid "Профілі"
+msgstr ""
+
+#: .\account\models.py:18
+msgid "Profile of"
 msgstr ""
 
 #: .\account\templates\account\edit.html:5
@@ -160,8 +162,7 @@ msgstr ""
 #, python-format
 msgid ""
 "\n"
-"  <p>Ви можете повернутись на <a href=\"%('product_list_url')s\">головну "
-"сторінку.</a></p>\n"
+"  <p>Ви можете повернутись на <a href=\"%('product_list_url')s\">головну сторінку.</a></p>\n"
 "  "
 msgstr ""
 
@@ -214,8 +215,7 @@ msgstr ""
 msgid ""
 "\n"
 "        Посилання на відновлення паролю недійсне. \n"
-"        Скористайтесь сторінкою <a href=\"%(password_reset_url)s"
-"\">відновлення паролю</a> \n"
+"        Скористайтесь сторінкою <a href=\"%(password_reset_url)s\">відновлення паролю</a> \n"
 "        "
 msgstr ""
 
@@ -227,10 +227,7 @@ msgstr ""
 #: .\account\templates\registration\password_reset_done.html:9
 msgid ""
 "\n"
-"    Ми відправили вам інструкції для встановлення пароля, якщо обліковий "
-"запис з введеною адресою існує. Ви маєте отримати їх найближчим часом. Якщо "
-"Ви не отримали електронного листа, переконайтеся, будь ласка, в "
-"зареєстрованій адресі і перевірте папку \"Спам\".\n"
+"    Ми відправили вам інструкції для встановлення пароля, якщо обліковий запис з введеною адресою існує. Ви маєте отримати їх найближчим часом. Якщо Ви не отримали електронного листа, переконайтеся, будь ласка, в зареєстрованій адресі і перевірте папку \"Спам\".\n"
 "    "
 msgstr ""
 
@@ -238,10 +235,8 @@ msgstr ""
 #, python-format
 msgid ""
 "\n"
-"Хтось запросив відновленню паролю для користувача з електронною поштою "
-"%(email)s.\n"
-"Перейдіть за наступним посиланням: %(protocol)s://%(domain)s"
-"%(password_reset_confirm_url)s\n"
+"Хтось запросив відновленню паролю для користувача з електронною поштою %(email)s.\n"
+"Перейдіть за наступним посиланням: %(protocol)s://%(domain)s%(password_reset_confirm_url)s\n"
 "Ваш логін, якщо Ви забули: %(user.get_username)s\n"
 msgstr ""
 
@@ -277,7 +272,8 @@ msgstr ""
 msgid "Фото"
 msgstr ""
 
-#: .\cart\templates\cart\detail.html:15 .\shop\models.py:10 .\shop\models.py:33
+#: .\cart\templates\cart\detail.html:15 .\shop\models.py:10
+#: .\shop\models.py:33
 msgid "Назва"
 msgstr ""
 
@@ -308,8 +304,7 @@ msgstr ""
 #, python-format
 msgid ""
 "\n"
-"        <td>Купон \"%(cart.coupon.code)s\" на %(cart.coupon.discount)s%%</"
-"td>\n"
+"        <td>Купон \"%(cart.coupon.code)s\" на %(cart.coupon.discount)s%%</td>\n"
 "        "
 msgstr ""
 
@@ -328,6 +323,18 @@ msgstr ""
 #: .\cart\templates\cart\detail.html:84
 msgid "Замовити"
 msgstr ""
+
+#: .\core\urls.py:25
+msgid "account/"
+msgstr "профіль/"
+
+#: .\core\urls.py:27
+msgid "cart/"
+msgstr "кошик/"
+
+#: .\core\urls.py:28
+msgid "orders/"
+msgstr "замовлення/"
 
 #: .\coupons\forms.py:6
 msgid "Код купона"
@@ -367,6 +374,10 @@ msgstr ""
 
 #: .\orders\admin.py:37
 msgid "Експорт в CSV"
+msgstr ""
+
+#: .\orders\admin.py:47
+msgid "Перегляд"
 msgstr ""
 
 #: .\orders\models.py:14
@@ -410,6 +421,10 @@ msgstr ""
 #: .\orders\templates\admin\orders\order\detail.html:13
 #: .\orders\templates\orders\order\create.html:10
 msgid "Замовлення"
+msgstr ""
+
+#: .\orders\models.py:35
+msgid "Замовлення №"
 msgstr ""
 
 #: .\orders\models.py:53 .\orders\templates\admin\orders\order\detail.html:61
@@ -479,8 +494,7 @@ msgstr ""
 #, python-format
 msgid ""
 "\n"
-"        <p>Купон \"%(cart.coupon.code)s\" на %(cart.coupon.discount)s%%: "
-"<strong>%(cart.get_discount|floatformat:2)s ₴</strong></p>\n"
+"        <p>Купон \"%(cart.coupon.code)s\" на %(cart.coupon.discount)s%%: <strong>%(cart.get_discount|floatformat:2)s ₴</strong></p>\n"
 "        "
 msgstr ""
 
@@ -500,10 +514,13 @@ msgstr ""
 #, python-format
 msgid ""
 "\n"
-"  <p>Ваше замовлення було успішно створено. Номер замовлення - <strong>"
-"%(order.id)s</strong></p>\n"
+"  <p>Ваше замовлення було успішно створено. Номер замовлення - <strong>%(order.id)s</strong></p>\n"
 "  "
 msgstr ""
+
+#: .\orders\urls.py:9
+msgid "create/"
+msgstr "нове/"
 
 #: .\shop\models.py:18 .\shop\models.py:32
 msgid "Категорія"
