@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-05 18:30+0200\n"
-"PO-Revision-Date: 2025-02-26 20:03+0200\n"
+"PO-Revision-Date: 2025-03-05 20:05+0200\n"
 "Last-Translator:   <admin@mail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -21,45 +21,44 @@ msgstr ""
 
 #: .\account\forms.py:9
 msgid "Логін"
-msgstr ""
+msgstr "Login"
 
 #: .\account\forms.py:10 .\account\forms.py:14
 msgid "Пароль"
-msgstr ""
+msgstr "Password"
 
 #: .\account\forms.py:15
 msgid "Повторити пароль"
-msgstr ""
+msgstr "Repeat password"
 
 #: .\account\forms.py:24
 msgid "Паролі не співпадають."
-msgstr ""
+msgstr "Passwords don't match."
 
 #: .\account\models.py:9
 msgid "Користувач"
-msgstr ""
+msgstr "User"
 
 #: .\account\models.py:10
-#, fuzzy
 #| msgid "Замовлення"
 msgid "Дата народження"
-msgstr "Order"
+msgstr "Birthdate"
 
 #: .\account\models.py:11
 msgid "Фотографія"
-msgstr ""
+msgstr "Photo"
 
 #: .\account\models.py:14
 msgid "Профіль"
-msgstr ""
+msgstr "Profile"
 
 #: .\account\models.py:15
 msgid "Профілі"
-msgstr ""
+msgstr "Profiles"
 
 #: .\account\models.py:18
 msgid "Profile of"
-msgstr ""
+msgstr "Профіль"
 
 #: .\account\templates\account\edit.html:5
 #: .\account\templates\account\edit.html:11
@@ -68,7 +67,7 @@ msgstr "Change user profile"
 
 #: .\account\templates\account\edit.html:18
 msgid "Зберегти"
-msgstr ""
+msgstr "Save"
 
 #: .\account\templates\account\edit.html:20
 msgid "Змінити пароль"
@@ -79,28 +78,27 @@ msgstr "Change password"
 #: .\account\templates\registration\login.html:5
 #: .\account\templates\registration\login.html:10
 msgid "Вхід на сайт"
-msgstr ""
+msgstr "Log in to site"
 
 #: .\account\templates\account\login.html:11
 #: .\account\templates\registration\login.html:20
 #: .\shop\templates\shop\base.html:41
 msgid "Вхід"
-msgstr ""
+msgstr "Log in"
 
 #: .\account\templates\account\register.html:5
 #: .\account\templates\account\register.html:10
 msgid "Створити нового користувача"
-msgstr ""
+msgstr "Create new user"
 
 #: .\account\templates\account\register.html:14
-#, fuzzy
 #| msgid "Створено"
 msgid "Створити"
 msgstr "Created"
 
 #: .\account\templates\account\register_done.html:4
 msgid "Ласкаво просимо"
-msgstr ""
+msgstr "Welcome"
 
 #: .\account\templates\account\register_done.html:7
 #, python-format
@@ -109,6 +107,8 @@ msgid ""
 "  <h2>Ласкаво просимо, %(new_user.first_name)s</h2>\n"
 "  "
 msgstr ""
+"\n"
+"<h2>Welcome, %(new_user.first_name)s</h2>"
 
 #: .\account\templates\account\register_done.html:12
 #, python-format
@@ -118,6 +118,9 @@ msgid ""
 "    Тепер Ви можете <a href=\"%(login_url)s\">залогінитись</a>.\n"
 "    "
 msgstr ""
+"\n"
+"Your account has been successfully created.\n"
+"Now you can <a href=\"%(login_url)s\">log in</a>."
 
 #: .\account\templates\registration\logged_out.html:4
 #: .\account\templates\registration\logged_out.html:7
@@ -135,55 +138,58 @@ msgid ""
 "  <p>Ви можете знов <a href=\"%(login_url)s\">залогінитись.</a></p>\n"
 "  "
 msgstr ""
+"\n"
+"<p>You can again <a href=\"%(login_url)s\">log in.</a></p>"
 
 #: .\account\templates\registration\login.html:12
 msgid "Помилка входу на сайт. Спробуйте ще раз."
-msgstr ""
+msgstr "Login error. Try another one."
 
 #: .\account\templates\registration\login.html:14
 msgid "Заповніть поля нижче для входу на сайт"
-msgstr ""
+msgstr "Please, fill fields below to log in to the site"
 
 #: .\account\templates\registration\login.html:23
 #: .\shop\templates\shop\base.html:42
 msgid "Реєстрація"
-msgstr ""
+msgstr "Registration"
 
 #: .\account\templates\registration\login.html:24
 msgid "Забули пароль?"
-msgstr ""
+msgstr "Forgot password?"
 
 #: .\account\templates\registration\password_change_done.html:4
 #: .\account\templates\registration\password_change_done.html:7
 msgid "Пароль змінено"
-msgstr ""
+msgstr "Password has changed"
 
 #: .\account\templates\registration\password_change_done.html:8
 msgid "Ви успішно здійснили зміну паролю."
-msgstr ""
+msgstr "You successfully changed your password"
 
 #: .\account\templates\registration\password_change_done.html:10
 #, python-format
 msgid ""
 "\n"
-"  <p>Ви можете повернутись на <a href=\"%('product_list_url')s\">головну "
-"сторінку.</a></p>\n"
+"  <p>Ви можете повернутись на <a href=\"%('product_list_url')s\">головну сторінку.</a></p>\n"
 "  "
 msgstr ""
+"\n"
+"<p>You can return to <a href=\"%('product_list_url')s\">Home.</a></p>"
 
 #: .\account\templates\registration\password_change_form.html:5
 #: .\account\templates\registration\password_change_form.html:10
 msgid "Зміна паролю"
-msgstr ""
+msgstr "Password change"
 
 #: .\account\templates\registration\password_change_form.html:12
 msgid "Помилка зміни паролю. Спробуйте ще раз."
-msgstr ""
+msgstr "Password changing error. Try again."
 
 #: .\account\templates\registration\password_change_form.html:14
 #: .\account\templates\registration\password_reset_confirm.html:12
 msgid "Заповніть поля нижче для зміни паролю."
-msgstr ""
+msgstr "Fill fields below to change password"
 
 #: .\account\templates\registration\password_change_form.html:19
 #: .\account\templates\registration\password_reset_confirm.html:16
@@ -193,14 +199,13 @@ msgstr "Change"
 
 #: .\account\templates\registration\password_reset_complete.html:4
 #: .\account\templates\registration\password_reset_complete.html:7
-#, fuzzy
 #| msgid "Оновлено"
 msgid "Пароль відновлено"
-msgstr "Updated"
+msgstr "Password recovered"
 
 #: .\account\templates\registration\password_reset_complete.html:8
 msgid "Ви успішно здійснили відновлення паролю."
-msgstr ""
+msgstr "You successfully have recovered your password"
 
 #: .\account\templates\registration\password_reset_complete.html:10
 #, python-format
@@ -209,38 +214,38 @@ msgid ""
 "  <p>Ви можете <a href=\"%(login_url)s\">залогінитись.</a></p>\n"
 "  "
 msgstr ""
+"\n"
+"<p>You can <a href=\"%(login_url)s\">log in.</a></p>"
 
 #: .\account\templates\registration\password_reset_confirm.html:5
 #: .\account\templates\registration\password_reset_confirm.html:10
 #: .\account\templates\registration\password_reset_form.html:5
 #: .\account\templates\registration\password_reset_form.html:10
-#, fuzzy
 #| msgid "Замовлення"
 msgid "Відновлення паролю"
-msgstr "Order"
+msgstr "Password recovery"
 
 #: .\account\templates\registration\password_reset_confirm.html:21
 #, python-format
 msgid ""
 "\n"
 "        Посилання на відновлення паролю недійсне. \n"
-"        Скористайтесь сторінкою <a "
-"href=\"%(password_reset_url)s\">відновлення паролю</a> \n"
+"        Скористайтесь сторінкою <a href=\"%(password_reset_url)s\">відновлення паролю</a> \n"
 "        "
 msgstr ""
+"\n"
+"Password recovery link is broken.\n"
+"Link to <a href=\"%(password_reset_url)s\">password recovery</a>"
 
 #: .\account\templates\registration\password_reset_done.html:4
 #: .\account\templates\registration\password_reset_done.html:7
 msgid "Відновлення пароля відправлено"
-msgstr ""
+msgstr "Password recovery was sent"
 
 #: .\account\templates\registration\password_reset_done.html:9
 msgid ""
 "\n"
-"    Ми відправили вам інструкції для встановлення пароля, якщо обліковий "
-"запис з введеною адресою існує. Ви маєте отримати їх найближчим часом. Якщо "
-"Ви не отримали електронного листа, переконайтеся, будь ласка, в "
-"зареєстрованій адресі і перевірте папку \"Спам\".\n"
+"    Ми відправили вам інструкції для встановлення пароля, якщо обліковий запис з введеною адресою існує. Ви маєте отримати їх найближчим часом. Якщо Ви не отримали електронного листа, переконайтеся, будь ласка, в зареєстрованій адресі і перевірте папку \"Спам\".\n"
 "    "
 msgstr ""
 
@@ -248,10 +253,8 @@ msgstr ""
 #, python-format
 msgid ""
 "\n"
-"Хтось запросив відновленню паролю для користувача з електронною поштою "
-"%(email)s.\n"
-"Перейдіть за наступним посиланням: %(protocol)s://"
-"%(domain)s%(password_reset_confirm_url)s\n"
+"Хтось запросив відновленню паролю для користувача з електронною поштою %(email)s.\n"
+"Перейдіть за наступним посиланням: %(protocol)s://%(domain)s%(password_reset_confirm_url)s\n"
 "Ваш логін, якщо Ви забули: %(user.get_username)s\n"
 msgstr ""
 
@@ -287,7 +290,8 @@ msgstr "Your cart"
 msgid "Фото"
 msgstr ""
 
-#: .\cart\templates\cart\detail.html:15 .\shop\models.py:10 .\shop\models.py:33
+#: .\cart\templates\cart\detail.html:15 .\shop\models.py:10
+#: .\shop\models.py:33
 msgid "Назва"
 msgstr "Name"
 
@@ -318,8 +322,7 @@ msgstr "Without coupon"
 #, python-format
 msgid ""
 "\n"
-"        <td>Купон \"%(cart.coupon.code)s\" на %(cart.coupon.discount)s%%</"
-"td>\n"
+"        <td>Купон \"%(cart.coupon.code)s\" на %(cart.coupon.discount)s%%</td>\n"
 "        "
 msgstr ""
 "\n"
@@ -523,13 +526,11 @@ msgstr "Without coupon:"
 #, python-format
 msgid ""
 "\n"
-"        <p>Купон \"%(cart.coupon.code)s\" на %(cart.coupon.discount)s%%: "
-"<strong>%(cart.get_discount|floatformat:2)s ₴</strong></p>\n"
+"        <p>Купон \"%(cart.coupon.code)s\" на %(cart.coupon.discount)s%%: <strong>%(cart.get_discount|floatformat:2)s ₴</strong></p>\n"
 "        "
 msgstr ""
 "\n"
-"<p>Coupon \"%(cart.coupon.code)s\" off %(cart.coupon.discount)s%%: "
-"<strong>%(cart.get_discount|floatformat:2)s ₴</strong></p>"
+"<p>Coupon \"%(cart.coupon.code)s\" off %(cart.coupon.discount)s%%: <strong>%(cart.get_discount|floatformat:2)s ₴</strong></p>"
 
 #: .\orders\templates\orders\order\create.html:30
 msgid "Усього:"
@@ -549,8 +550,7 @@ msgstr ""
 #, python-format
 msgid ""
 "\n"
-"  <p>Ваше замовлення було успішно створено. Номер замовлення - "
-"<strong>%(order.id)s</strong></p>\n"
+"  <p>Ваше замовлення було успішно створено. Номер замовлення - <strong>%(order.id)s</strong></p>\n"
 "  "
 msgstr ""
 
