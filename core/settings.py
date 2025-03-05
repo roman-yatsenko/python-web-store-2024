@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'crispy_bootstrap5',
     'rosetta',
+    'parler',
 ]
 
 CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
@@ -134,6 +135,16 @@ LANGUAGES = [
 
 LOCALE_PATHS = [BASE_DIR / 'locale',]
 
+PARLER_LANGUAGES = {
+    None: (
+        {'code': 'uk'},
+        {'code': 'en'},
+    ),
+    'default': {
+        'fallback': 'uk',
+        'hide_untranslated': False,
+    }
+}
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
